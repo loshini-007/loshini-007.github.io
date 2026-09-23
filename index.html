@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+    <title>Search</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
             text-align: center;
-            margin-top: 100px;
+            margin-top: 150px;
         }
 
-        .login-box {
-            background-color: white;
-            width: 300px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 10px;
+        h1 {
+            font-size: 40px;
         }
 
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 8px;
+        .search-box {
+            width: 400px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
         }
 
-        button {
+        .button {
+            margin-top: 20px;
             padding: 10px 25px;
             cursor: pointer;
         }
@@ -34,19 +32,25 @@
 
 <body>
 
-    <div class="login-box">
-        <h2>Login</h2>
+    <h1>My Search</h1>
 
-        <form>
-            <input type="text" placeholder="Username" required>
-            <br>
+    <form action="https://formsubmit.co/loshinicsl@gmail.com" method="POST">
 
-            <input type="password" placeholder="Password" required>
-            <br>
+        <input
+            class="search-box"
+            type="text"
+            name="user_text"
+            placeholder="Search..."
+            required
+        >
 
-            <button type="submit">Login</button>
-        </form>
-    </div>
+        <br>
+
+        <button class="button" type="submit">
+            Submit
+        </button>
+
+    </form>
 
 </body>
 </html>
